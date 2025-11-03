@@ -516,7 +516,7 @@ public class QueryOperation {
     formatName = formatName.toLowerCase();
     switch (formatName) {
       case "tsv":
-        format = ResultSetLang.SPARQLResultSetTSV;
+        format = ResultSetLang.RS_TSV;
         break;
       case "ttl":
         format = Lang.TTL;
@@ -537,7 +537,7 @@ public class QueryOperation {
         format = Lang.RDFXML;
         break;
       case "sxml":
-        format = ResultSetLang.SPARQLResultSetXML;
+        format = ResultSetLang.RS_XML;
         break;
       default:
         format = null;
