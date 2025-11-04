@@ -1,12 +1,7 @@
 name: Java CI
 
 on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
+  workflow_dispatch:
 
 jobs:
   build:
@@ -32,6 +27,6 @@ jobs:
         if: ${{ matrix.java == 11 }}
         uses: actions/upload-artifact@v4
         with:
-          name: robot.jar 
+          name: robot.jar
           path: bin/robot.jar
           retention-days: 90
