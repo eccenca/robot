@@ -32,7 +32,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-failsafe-plugin</artifactId>
-        <version>3.0.0-M5</version>
+        <version>3.5.2</version>
         <executions>
           <execution>
             <goals>
@@ -129,6 +129,12 @@
       <groupId>org.obolibrary.robot</groupId>
       <artifactId>robot-core</artifactId>
       <version>${project.parent.version}</version>
+      <exclusions>
+        <exclusion>
+          <groupId>commons-lang</groupId>
+          <artifactId>commons-lang</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>commons-cli</groupId>
@@ -139,6 +145,12 @@
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
       <version>2.14.0</version>
+    </dependency>
+    <!-- Explicitly use commons-lang3 instead of commons-lang -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.19.0</version>
     </dependency>
   </dependencies>
 </project>
