@@ -129,6 +129,12 @@
       <groupId>org.obolibrary.robot</groupId>
       <artifactId>robot-core</artifactId>
       <version>${project.parent.version}</version>
+      <exclusions>
+        <exclusion>
+          <groupId>commons-lang</groupId>
+          <artifactId>commons-lang</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>commons-cli</groupId>
