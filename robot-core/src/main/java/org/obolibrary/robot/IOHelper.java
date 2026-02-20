@@ -79,9 +79,13 @@ public class IOHelper {
   private static final String invalidOntologyFileError =
       NS + "INVALID ONTOLOGY FILE ERROR Could not load a valid ontology from file: %s";
 
-  /** Error message when the specified file cannot be loaded using the specified format. Expects the format name and file name. */
+  /**
+   * Error message when the specified file cannot be loaded using the specified format. Expects the
+   * format name and file name.
+   */
   private static final String invalidOntologyFileFormatError =
-      NS + "INVALID ONTOLOGY FILE FORMAT ERROR Could not load a valid ontology using '%s' format from file: %s";
+      NS
+          + "INVALID ONTOLOGY FILE FORMAT ERROR Could not load a valid ontology using '%s' format from file: %s";
 
   /** Error message when the specified IRI cannot be loaded. Expects the IRI string. */
   private static final String invalidOntologyIRIError =
@@ -354,7 +358,7 @@ public class IOHelper {
    */
   public OWLOntology loadOntology(String ontologyPath, String catalogPath) throws IOException {
     File ontologyFile = new File(ontologyPath);
-    File catalogFile = new File(catalogPath);
+    File catalogFile = catalogPath != null ? new File(catalogPath) : null;
     return loadOntology(ontologyFile, catalogFile);
   }
 
@@ -494,7 +498,8 @@ public class IOHelper {
       if (inputFormat == null) {
         throw new IOException(String.format(invalidOntologyFileError, ontologyFile.getName()), e);
       } else {
-        throw new IOException(String.format(invalidOntologyFileFormatError, inputFormat, ontologyFile.getName()), e);
+        throw new IOException(
+            String.format(invalidOntologyFileFormatError, inputFormat, ontologyFile.getName()), e);
       }
     }
   }
