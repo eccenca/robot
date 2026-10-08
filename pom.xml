@@ -149,7 +149,7 @@
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
-      <version>31.1-jre</version>
+      <version>33.5.0-jre</version>
     </dependency>
     <dependency>
       <groupId>net.sourceforge.owlapi</groupId>
@@ -192,7 +192,7 @@
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
-      <version>1.5.6</version>
+      <version>1.5.37</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
