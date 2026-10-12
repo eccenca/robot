@@ -28,3 +28,7 @@ This changelog covers the changes of the [eccenca fork](https://github.com/eccen
 - Add explicit versions for transitive dependencies org.apache.logging.log4j:log4j-api 2.26.1, com.fasterxml.jackson.core:jackson-databind 2.22.3, org.apache.james:apache-mime4j-core 0.8.13, com.google.protobuf:protobuf-java 3.25.5, org.apache.thrift:libthrift 0.24.0 and org.apache.commons:commons-lang3 3.20.0.
 - Exclude commons-lang:commons-lang from the robot-core dependency in robot-command.
 - Use `ResultSetLang.RS_TSV` and `ResultSetLang.RS_XML` in `QueryOperation`, required by the Jena 4 update.
+
+### Added
+
+- Add README.eccenca.md with instructions for building `bin/robot.jar` together with a CycloneDX SBOM.
