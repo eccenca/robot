@@ -11,7 +11,7 @@ This changelog covers the changes of the [eccenca fork](https://github.com/eccen
 
 ### Fixed
 
-- Fix vulnerabilities CVE-2026-1225, CVE-2026-9828, CVE-2026-19032, CVE-2026-49844, CVE-2026-54512, CVE-2026-54513, CVE-2026-54514, CVE-2026-54515, CVE-2026-68497, CVE-2026-83557, GHSA-72hv-8253-57qq.
+- Fix vulnerabilities CVE-2026-1225, CVE-2026-9828, CVE-2026-19032, CVE-2026-49844, CVE-2026-54512, CVE-2026-54513, CVE-2026-54514, CVE-2026-54515, CVE-2026-59888, CVE-2026-68497, CVE-2026-77310, CVE-2026-83557, CVE-2026-91776, CVE-2026-91777, GHSA-72hv-8253-57qq.
 
 ### Changed
 
@@ -26,5 +26,5 @@ This changelog covers the changes of the [eccenca fork](https://github.com/eccen
 - Update com.fasterxml.jackson.dataformat:jackson-dataformat-yaml from 2.12.2 to 2.22.3.
 - Update com.fasterxml.jackson.core:jackson-annotations from 2.12.2 to 2.22.
 - Add explicit versions for transitive dependencies org.apache.logging.log4j:log4j-api 2.26.1, com.fasterxml.jackson.core:jackson-databind 2.22.3, org.apache.james:apache-mime4j-core 0.8.13 and org.apache.commons:commons-lang3 3.20.0.
-- Exclude commons-lang:commons-lang from robot-core in robot-command.
+- Exclude commons-lang:commons-lang from the robot-core dependency in robot-command.
 - Use `ResultSetLang.RS_TSV` and `ResultSetLang.RS_XML` in `QueryOperation`, required by the Jena 4 update.
