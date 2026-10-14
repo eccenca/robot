@@ -7,7 +7,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 This changelog covers the changes of the [eccenca fork](https://github.com/eccenca/robot) on top of upstream [ontodev/robot](https://github.com/ontodev/robot). For upstream changes, see [CHANGELOG.md](CHANGELOG.md).
 
-## [1.9.8] 2026-01-23
+## [Unreleased]
 
 ### Fixed
 
