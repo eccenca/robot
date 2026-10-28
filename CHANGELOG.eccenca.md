@@ -16,7 +16,7 @@ This changelog covers the changes of the [eccenca fork](https://github.com/eccen
 ### Changed
 
 - Based on upstream ROBOT v1.9.11.
-- Update com.google.guava:guava from 31.1-jre to 33.5.0-jre.
+- Update com.google.guava:guava from 31.1-jre to 33.7.2-jre.
 - Update ch.qos.logback:logback-classic from 1.5.6 to 1.5.37.
 - Update org.apache.jena:jena-arq and org.apache.jena:jena-tdb from 3.17.0 to 4.10.0.
 - Update org.apache.poi:poi and org.apache.poi:poi-ooxml from 5.4.1 to 5.5.1.
